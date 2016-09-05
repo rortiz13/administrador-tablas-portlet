@@ -1,0 +1,76 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:liferay-ui="http://liferay.com/faces/ui"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:c="http://java.sun.com/jstl/core"
+	template="internalTemplate.xhtml">
+	<ui:define name="content">
+
+		<div class="spacer15"></div>
+		
+		<h:form style="padding-bottom: 3px;" id="formListado">
+
+			<div class="spacer15"></div>
+
+			<rich:panel>
+				<f:facet name="header">
+					<h:outputText value="#{i18n['resultados-encontrados']}"></h:outputText>
+				</f:facet>
+
+				<rich:dataTable style="width: 100%;" rows="20" var="dato"
+					id="dataTable" value="#{ciudadBean.listaCiudad}" >
+					<f:facet name="header">
+						<rich:columnGroup>
+							<rich:column>
+								<h:outputText value="#{i18n['codigo']}"></h:outputText>
+							</rich:column>
+							<rich:column>
+								<h:outputText value="#{i18n['nombre']}"></h:outputText>
+							</rich:column>
+							<rich:column>
+								<h:outputText value="#{i18n['departamento']}"></h:outputText>
+							</rich:column>
+							<rich:column>
+								<h:outputText value="#{i18n['opciones']}"></h:outputText>
+							</rich:column>
+						</rich:columnGroup>
+					</f:facet>
+					<rich:column>
+						<h:outputText value="#{dato.codigo}"></h:outputText>
+					</rich:column>
+					<rich:column>
+						<h:outputText value="#{dato.nombre}"></h:outputText>
+					</rich:column>
+					<rich:column>
+						<h:outputText value="#{dato.departamento}"></h:outputText>
+					</rich:column>
+					
+					<rich:column>
+						<h:panelGrid columns="2">
+							<h:commandLink style="color: #FFFFFF;" action="actualizar">
+								<h:graphicImage alt="#{i18n['actualizar']}"
+									title="#{i18n['actualizar']}"
+									url="#{liferay.themeImagesURL}/common/edit.png"></h:graphicImage>
+								<f:param name="idRegSeleccionado" value="#{dato.codigo}" />
+							</h:commandLink>
+							<h:commandLink style="color: #FFFFFF;" action="eliminar" >
+								<h:graphicImage alt="#{i18n['eliminar']}"
+									title="#{i18n['eliminar']}"
+									url="#{liferay.themeImagesURL}/common/delete.png"></h:graphicImage>
+								<f:param name="idRegSeleccionado" value="#{dato.codigo}" />
+							</h:commandLink>							
+						</h:panelGrid>
+					</rich:column>
+					
+					<f:facet name="footer">
+						<rich:dataScroller id="ds" maxPages="5" for="dataTable"></rich:dataScroller>
+					</f:facet>
+				</rich:dataTable>
+
+			</rich:panel>
+		</h:form>
+	</ui:define>
+</ui:composition>

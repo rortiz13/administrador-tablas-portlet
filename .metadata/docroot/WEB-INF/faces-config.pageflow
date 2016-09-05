@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf147187922582535" configfile="/administrador-tablas-portlet/docroot/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="config/*" x="122" y="2482" id="pf14719672726500" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14719672726501 pf14719672726502 pf14719672726503 pf147223818705816" path="/config/*"/>
+  <nodes xsi:type="pageflow:PFPage" name="config/especialidad/listado.xhtml" x="338" y="2482" id="pf14719672726504" referenceLink="//@navigationRule.1/@navigationCase.4/@toViewId|" inlinks="pf14719672726501 pf147197548904913 pf14722381832681" path="/config/especialidad/listado.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="config/entidad/listado.xhtml" x="338" y="4018" id="pf14719672726505" referenceLink="//@navigationRule.2/@navigationCase.4/@toViewId|" inlinks="pf14719672726502 pf147197548904914 pf14722381832682" path="/config/entidad/listado.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="config/ciudad/listado.xhtml" x="338" y="1330" id="pf14719672726506" referenceLink="//@navigationRule.4/@navigationCase.2/@toViewId|" inlinks="pf14719672726503 pf14719672726507 pf14720502561040" path="/config/ciudad/listado.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="config/ciudad/*" x="122" y="946" id="pf14719672726508" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf14719672726507 pf14720502561041 pf14720502561040 pf14720509443753 pf14720509443754" path="/config/ciudad/*"/>
+  <nodes xsi:type="pageflow:PFPage" name="config/especialidad/*" x="122" y="2866" id="pf147197548904915" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf147197548904913 pf14722381832683 pf14722381832684 pf14722381832685 pf14722381832681" path="/config/especialidad/*"/>
+  <nodes xsi:type="pageflow:PFPage" name="config/entidad/*" x="122" y="4402" id="pf147197548904916" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf147197548904914 pf14722381832696 pf14722381832697 pf14722381832698 pf14722381832682" path="/config/entidad/*"/>
+  <nodes xsi:type="pageflow:PFPage" name="config/ciudad/agregar.xhtml" x="338" y="178" id="pf14720502561042" referenceLink="//@navigationRule.3/@navigationCase.1/@toViewId|" inlinks="pf14720502561041" path="/config/ciudad/agregar.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="config/ciudad/actualizar.xhtml" x="338" y="562" id="pf14720509443765" referenceLink="//@navigationRule.3/@navigationCase.2/@toViewId|" inlinks="pf14720509443753" path="/config/ciudad/actualizar.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="config/ciudad/eliminar.xhtml" x="338" y="946" id="pf14720509443766" referenceLink="//@navigationRule.3/@navigationCase.3/@toViewId|" inlinks="pf14720509443754" path="/config/ciudad/eliminar.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="config/especialidad/agregar.xhtml" x="338" y="2866" id="pf14722381832699" referenceLink="//@navigationRule.1/@navigationCase.1/@toViewId|" inlinks="pf14722381832683" path="/config/especialidad/agregar.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="config/especialidad/actualizar.xhtml" x="338" y="3250" id="pf147223818326910" referenceLink="//@navigationRule.1/@navigationCase.2/@toViewId|" inlinks="pf14722381832684" path="/config/especialidad/actualizar.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="config/especialidad/eliminar.xhtml" x="338" y="3634" id="pf147223818326911" referenceLink="//@navigationRule.1/@navigationCase.3/@toViewId|" inlinks="pf14722381832685" path="/config/especialidad/eliminar.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="config/entidad/agregar.xhtml" x="338" y="4402" id="pf147223818326912" referenceLink="//@navigationRule.2/@navigationCase.1/@toViewId|" inlinks="pf14722381832696" path="/config/entidad/agregar.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="config/entidad/actualizar.xhtml" x="338" y="4786" id="pf147223818326913" referenceLink="//@navigationRule.2/@navigationCase.2/@toViewId|" inlinks="pf14722381832697" path="/config/entidad/actualizar.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="config/entidad/eliminar.xhtml" x="338" y="5170" id="pf147223818326914" referenceLink="//@navigationRule.2/@navigationCase.3/@toViewId|" inlinks="pf14722381832698" path="/config/entidad/eliminar.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="config/usuario/agregar.xhtml" x="338" y="2098" id="pf147223818705917" referenceLink="//@navigationRule.4/@navigationCase.2/@toViewId|" inlinks="pf147223818705816 pf147223821376418 pf14726546615964" path="/config/usuario/agregar.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="config/usuario/*" x="122" y="1906" id="pf147223821376519" referenceLink="//@navigationRule.4/@fromViewId|" outlinks="pf147223821376418 pf14726546250060 pf14726546615964" path="/config/usuario/*"/>
+  <nodes xsi:type="pageflow:PFPage" name="config/usuario/eliminar.xhtml" x="338" y="1714" id="pf14726546250061" referenceLink="//@navigationRule.4/@navigationCase.1/@toViewId|" inlinks="pf14726546250060" path="/config/usuario/eliminar.xhtml"/>
+  <links id="pf14719672726501" target="pf14719672726504" source="pf14719672726500" outcome="gestionEspecialidades" redirect="true"/>
+  <links id="pf14719672726502" target="pf14719672726505" source="pf14719672726500" outcome="gestionEntidades" redirect="true"/>
+  <links id="pf14719672726503" target="pf14719672726506" source="pf14719672726500" outcome="gestionCiudades" redirect="true"/>
+  <links id="pf14719672726507" target="pf14719672726506" source="pf14719672726508" outcome="listado" redirect="true"/>
+  <links id="pf147197548904913" target="pf14719672726504" source="pf147197548904915" outcome="listado" redirect="true"/>
+  <links id="pf147197548904914" target="pf14719672726505" source="pf147197548904916" outcome="listado" redirect="true"/>
+  <links id="pf14720502561041" target="pf14720502561042" source="pf14719672726508" outcome="agregar" redirect="true"/>
+  <links id="pf14720502561040" target="pf14719672726506" source="pf14719672726508" outcome="transaccionExitosa" redirect="true"/>
+  <links id="pf14720509443753" target="pf14720509443765" source="pf14719672726508" outcome="actualizar" redirect="true"/>
+  <links id="pf14720509443754" target="pf14720509443766" source="pf14719672726508" outcome="eliminar" redirect="true"/>
+  <links id="pf14722381832683" target="pf14722381832699" source="pf147197548904915" outcome="agregar" redirect="true"/>
+  <links id="pf14722381832684" target="pf147223818326910" source="pf147197548904915" outcome="actualizar" redirect="true"/>
+  <links id="pf14722381832685" target="pf147223818326911" source="pf147197548904915" outcome="eliminar" redirect="true"/>
+  <links id="pf14722381832681" target="pf14719672726504" source="pf147197548904915" outcome="transaccionExitosa" redirect="true"/>
+  <links id="pf14722381832696" target="pf147223818326912" source="pf147197548904916" outcome="agregar" redirect="true"/>
+  <links id="pf14722381832697" target="pf147223818326913" source="pf147197548904916" outcome="actualizar" redirect="true"/>
+  <links id="pf14722381832698" target="pf147223818326914" source="pf147197548904916" outcome="eliminar" redirect="true"/>
+  <links id="pf14722381832682" target="pf14719672726505" source="pf147197548904916" outcome="transaccionExitosa" redirect="true"/>
+  <links id="pf147223818705816" target="pf147223818705917" source="pf14719672726500" outcome="gestionUsuarios" redirect="true"/>
+  <links id="pf147223821376418" target="pf147223818705917" source="pf147223821376519" outcome="agregar" redirect="true"/>
+  <links id="pf14726546250060" target="pf14726546250061" source="pf147223821376519" outcome="eliminar" redirect="true"/>
+  <links id="pf14726546615964" target="pf147223818705917" source="pf147223821376519" outcome="transaccionExitosa" redirect="true"/>
+</pageflow:Pageflow>

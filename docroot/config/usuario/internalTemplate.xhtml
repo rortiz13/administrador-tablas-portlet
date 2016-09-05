@@ -1,0 +1,17 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:aui-cc="http://liferay.com/faces/aui-cc"
+	template="../layouts/template.xhtml">
+
+	<ui:define name="body">
+		<h:panelGrid columns="2">
+			<h:graphicImage value="/images/current.png" width="16" height="16"
+				style="margin-right:3px; padding-right:3px;" />
+			<h:outputText value="#{i18n['usuarios']}" styleClass="tituloModulo"></h:outputText>
+		</h:panelGrid>
+		<aui-cc:messages globalOnly="true" layout="list" />
+		<ui:insert name="content" />
+
+	</ui:define>
+</ui:composition>

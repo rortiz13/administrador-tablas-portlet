@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:rich="http://richfaces.org/rich">
+	<h:form id="formMenu">
+		
+		<rich:panelMenu  itemMode="server"
+				groupExpandedLeftIcon="triangleUp"
+                groupCollapsedLeftIcon="triangleDown"
+                topGroupExpandedRightIcon="chevronUp"
+                topGroupCollapsedRightIcon="chevronDown" itemLeftIcon="disc"
+				activeItem="#{current}">
+			<rich:panelMenuGroup  label="#{i18n['tablas']}" expanded="true" > 
+						<rich:panelMenuItem id="gestionEspecialidades" label="#{i18n['especialidades']}" action="gestionEspecialidades">
+							 <f:setPropertyActionListener target="#{current}" value="gestionEspecialidades" />
+						</rich:panelMenuItem>	
+						<rich:panelMenuItem id="gestionEntidades" label="#{i18n['entidades']}" action="gestionEntidades">
+							 <f:setPropertyActionListener target="#{current}" value="gestionEntidades"/>
+						</rich:panelMenuItem>
+						<rich:panelMenuItem id="gestionCiudades" label="#{i18n['ciudades']}" action="gestionCiudades">
+							 <f:setPropertyActionListener target="#{current}" value="gestionCiudades"/>
+						</rich:panelMenuItem>
+						<rich:panelMenuItem id="gestionUsuarios" label="#{i18n['usuarios']}" action="gestionUsuarios" >
+							 <f:setPropertyActionListener target="#{current}" value="gestionUsuarios"/>
+						</rich:panelMenuItem>
+																			
+			</rich:panelMenuGroup>
+		</rich:panelMenu>
+	</h:form>
+</ui:composition>
