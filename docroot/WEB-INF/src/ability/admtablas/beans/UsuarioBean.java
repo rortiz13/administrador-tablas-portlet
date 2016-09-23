@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -54,12 +53,18 @@ public class UsuarioBean implements Serializable{
     
     public List<String> cargarListaUsuario(String query) throws SQLException, SystemException {
         List<String> results = new ArrayList<String>();
+        
         List<User> user_list = UserLocalServiceUtil.getUsers(QueryUtil.ALL_POS, QueryUtil.ALL_POS);
         for(User user: user_list){
         
         	if(user.getStatus() == 0){
 				if(user.getEmailAddress().startsWith(query)){
-					results.add(user.getEmailAddress());
+					for(Long rol: user.getRoleIds()){
+						if(rol == 1274148){
+							results.add(user.getEmailAddress());
+							break;
+						}
+					}					
 				}
         	}
 		}

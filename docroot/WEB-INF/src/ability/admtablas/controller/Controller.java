@@ -8,9 +8,7 @@ import javax.faces.context.FacesContext;
 import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.util.bridges.jsf.common.FacesMessageUtil;
-import com.sun.corba.se.spi.orbutil.fsm.Guard.Result;
 
-import ability.admtablas.beans.Constants;
 import ability.admtablas.entities.Ciudad;
 import ability.admtablas.entities.Entidad;
 import ability.admtablas.entities.Especialidad;
